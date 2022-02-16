@@ -1,0 +1,21 @@
+body{
+    background-color: beige;
+}
+p{
+    color: black;
+
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    background-color: pink;
+}
+ #practice{
+     font-size: 40px;
+     text-align: center;
+     font-style: italic;
+     background: hotpink;
+     wedth: 150px;
+     height: 50px;
+}
+
