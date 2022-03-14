@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="splide.min.css" type="text/css" rel="stylesheet">
+    <link href="slide_test-2.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="image-slider" class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <img src="imgs/img1.jpg">
+            </li>
+            <li class="splide__slide">
+                <img src="imgs/img2.jpg">
+            </li>
+            <li class="splide__slide">
+                <img src="imgs/img3.jpg">
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="splide.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-slider').mount();
+    });
+</script>
+</body>
+</html>
