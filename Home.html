@@ -4,61 +4,104 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link href="common_stylesheet.css" rel="stylesheet" type="text/css">
     <link href="home.css" rel="stylesheet" type="text/css">
     <link href="slider.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&family=Kiwi+Maru&display=swap"
+          rel="stylesheet">
 </head>
-<body>
-<!--<img class="background_img" src="background_img.png">-->
-<header>
-    <button id="mobile_toggle">
-        <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
-            <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
-                  d="M4 7h22M4 15h22M4 23h22"></path>
-        </svg>
-    </button>
-    <div id="site_title">22清陵祭</div>
-    <nav>
-        <ul class="header_menu">
-            <li><a>トップ</a></li>
-            <li><a>清陵祭とは</a></li>
-            <li><a>パンフレット</a></li>
-        </ul>
-    </nav>
-</header>
-<div class="content-frame">
-    <div class="content">
-        <ul class="slider">
-            <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg" alt="">
-            </li>
-            <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg" alt="">
-            </li>
-            <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg" alt="">
-            </li>
-            <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg" alt="">
-            </li>
-            <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg" alt="">
-            </li>
-            <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg" alt="">
-            </li>
-        </ul>
+<div class="wrapper">
+    <body>
+
+    <img class="background_img" src="background_img.png">
+    <div>
+        <nav>
+            <button id="mobile_toggle">
+                <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                          d="M4 7h22M4 15h22M4 23h22"></path>
+                </svg>
+            </button>
+            <div id="site_title">22清陵祭 花笑み</div>
+            <ul class="header_menu">
+                <li><a href="" class="hover-underline-animation">トップ</a></li>
+                <li><a href="#About" class="hover-underline-animation">清陵祭とは</a></li>
+                <li><a href="#Pampflet" class="hover-underline-animation">パンフレット</a></li>
+                <li><a href="#Pampflet" class="hover-underline-animation">企画を見る</a></li>
+            </ul>
+        </nav>
+        <div class="content-frame">
+            <div class="content-slider">
+                <ul class="slider">
+                    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                             alt="">
+                    </li>
+                    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg"
+                             alt="">
+                    </li>
+                    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg"
+                             alt="">
+                    </li>
+                    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg"
+                             alt="">
+                    </li>
+                    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg"
+                             alt="">
+                    </li>
+                    <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg"
+                             alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="home_pamphlet"><img src="pamphlet_here.png"></div>
+                <div class="home_events">
+                    <div class="button_events_all">
+                        <img src="event-button-1.png">
+                        <a href="https://shion1305.com">
+                            <div><p>全ての<br>企画<br>を見る</p></div>
+                        </a>
+                    </div>
+                    <div class="button_events_other">
+                        <div class="button_events_part">
+                            <img src="event-button-2.png">
+                            <a>
+                                <div>
+                                    <p>本部企画<br>を見る</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="button_events_part">
+                            <img src="event-button-3.png">
+                            <a>
+                                <div><p>団体企画<br>を見る</p></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            autoplay: true,//自動的に動き出すか。初期値はfalse。
+            infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+            speed: 500,//スライドのスピード。初期値は300。
+            slidesToShow: 3,//スライドを画面に3枚見せる
+            slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+            prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+            nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+            centerMode: true,//要素を中央ぞろえにする
+            variableWidth: true,//幅の違う画像の高さを揃えて表示
+            dots: true,//下部ドットナビゲーションの表示
+        });
+    </script>
+    </body>
 </div>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-    $('.slider').slick({
-        autoplay: true,//自動的に動き出すか。初期値はfalse。
-        infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-        speed: 500,//スライドのスピード。初期値は300。
-        slidesToShow: 3,//スライドを画面に3枚見せる
-        slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
-        prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-        nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-        centerMode: true,//要素を中央ぞろえにする
-        variableWidth: true,//幅の違う画像の高さを揃えて表示
-        dots: true,//下部ドットナビゲーションの表示
-    });
-</script>
-</body>
 </html>

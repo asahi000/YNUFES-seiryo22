@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>団体個別ページ</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link href="common_stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="EventDetail.css" rel="stylesheet" type="text/css">
+    <link href="slider.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&family=Kiwi+Maru&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<img class="background_img" src="background_img.png">
+<div>
+    <nav>
+        <button id="mobile_toggle">
+            <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+        <div id="site_title">22清陵祭</div>
+        <ul class="header_menu">
+            <li><a href="">トップ</a></li>
+            <li><a href="#About">清陵祭とは</a></li>
+            <li><a href="#Pampflet">パンフレット</a></li>
+            <li><a href="#Pampflet">企画を見る</a></li>
+        </ul>
+    </nav>
+    <div class="content-frame">
+        <div class="content">
+            <div class="icon_title_block">
+                <img src="https://www-next.ynu-fes.yokohama/wp-content/uploads/2021/11/K2101.jpg" class="icon">
+                <div class="title_block">
+                    <div class="title">団体名あいうえおかきくけこさしすせそたち</div>
+                    <div class></div>
+                </div>
+            </div>
+            <div class="detail_block">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.slider').slick({
+        autoplay: true,//自動的に動き出すか。初期値はfalse。
+        infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+        speed: 500,//スライドのスピード。初期値は300。
+        slidesToShow: 3,//スライドを画面に3枚見せる
+        slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+        prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+        nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+        centerMode: true,//要素を中央ぞろえにする
+        variableWidth: true,//幅の違う画像の高さを揃えて表示
+        dots: true,//下部ドットナビゲーションの表示
+    });
+</script>
+</body>
+</html>

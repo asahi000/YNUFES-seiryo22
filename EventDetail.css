@@ -1,0 +1,23 @@
+.icon_title_block {
+  display: flex;
+  flex-direction: row;
+  margin: 10px; }
+
+.icon {
+  width: 15rem; }
+
+.title_block {
+  margin-top: 10px;
+  margin-left: 20px; }
+  .title_block .title {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0; }
+    @media screen and (max-width: 768px) {
+      .title_block .title {
+        font-size: 2rem; } }
+
+.content {
+  max-width: 60rem; }
+
+/*# sourceMappingURL=EventDetail.css.map */
