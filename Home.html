@@ -15,8 +15,7 @@
 </head>
 <div class="wrapper">
     <body>
-
-    <img class="background_img" src="background_img.png">
+    <img class="background_img" src="background_img.png" alt=""/>
     <div>
         <nav>
             <button id="mobile_toggle">
@@ -25,7 +24,13 @@
                           d="M4 7h22M4 15h22M4 23h22"></path>
                 </svg>
             </button>
-            <div id="site_title">22清陵祭 花笑み</div>
+            <div id="site_title">
+                <div class="logo1">
+                    <div>22清陵祭</div>
+                    <div>横浜国立大学 大学祭</div>
+                </div>
+                <div class="logo2">花笑み</div>
+            </div>
             <ul class="header_menu">
                 <li><a href="" class="hover-underline-animation">トップ</a></li>
                 <li><a href="#About" class="hover-underline-animation">清陵祭とは</a></li>
@@ -33,57 +38,74 @@
                 <li><a href="#Pampflet" class="hover-underline-animation">企画を見る</a></li>
             </ul>
         </nav>
+        <!--        ここからが中身-->
         <div class="content-frame">
             <div class="content-slider">
                 <ul class="slider">
                     <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
-                             alt="">
+                             alt=""/>
                     </li>
                     <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg"
-                             alt="">
+                             alt=""/>
                     </li>
                     <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg"
-                             alt="">
+                             alt=""/>
                     </li>
                     <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg"
-                             alt="">
+                             alt=""/>
                     </li>
                     <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg"
-                             alt="">
+                             alt=""/>
                     </li>
                     <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg"
-                             alt="">
+                             alt=""/>
                     </li>
                 </ul>
             </div>
-            <div class="content">
-                <div class="home_pamphlet"><img src="pamphlet_here.png"></div>
+            <h1>企画を探す</h1>
+            <div class="content1-home">
                 <div class="home_events">
-                    <div class="button_events_all">
-                        <img src="event-button-1.png">
+                    <div class="button_events_all hover-to-shrink">
+                        <img src="event-button-1.png" alt="全ての企画を見る"/>
                         <a href="https://shion1305.com">
-                            <div><p>全ての<br>企画<br>を見る</p></div>
+                            <div><p>全ての<br>企画</p></div>
                         </a>
                     </div>
                     <div class="button_events_other">
-                        <div class="button_events_part">
-                            <img src="event-button-2.png">
+                        <div class="button_events_part hover-to-shrink">
+                            <img src="event-button-2.png" alt="本部企画"/>
                             <a>
                                 <div>
-                                    <p>本部企画<br>を見る</p>
+                                    <p>本部企画</p>
                                 </div>
                             </a>
                         </div>
-                        <div class="button_events_part">
-                            <img src="event-button-3.png">
+                        <div class="button_events_part hover-to-shrink">
+                            <img src="event-button-3.png" alt="団体企画"/>
                             <a>
-                                <div><p>団体企画<br>を見る</p></div>
+                                <div><p>団体企画</p></div>
                             </a>
                         </div>
                     </div>
                 </div>
+                <hr class="border_in_events">
+                <div class="events_by_category">
+                    <div>Web展示</div>
+
+
+                </div>
+                <!--                <div class="home_pamphlet"><img class="hover-to-shrink" src="pamphlet_here.png" alt="パンフレット"/></div>-->
+
+            </div>
+            <div class="update_block">
+                <h1 class="hover-underline-animation">更新情報</h1>
+                <!--                更新情報-->
             </div>
         </div>
+        <!--        ここまで-->
+        <footer>
+            aaaa
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

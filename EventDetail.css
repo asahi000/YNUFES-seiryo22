@@ -1,14 +1,27 @@
 .icon_title_block {
   display: flex;
-  flex-direction: row;
-  margin: 10px; }
-
-.icon {
-  width: 15rem; }
+  flex-direction: row; }
+  .icon_title_block .icon_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center; }
+  .icon_title_block .icon {
+    width: 15rem;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1rem; }
+  .icon_title_block .space_between_icon_title {
+    width: 2rem; }
+  @media screen and (max-width: 768px) {
+    .icon_title_block {
+      flex-direction: column;
+      justify-content: center; }
+      .icon_title_block .space_between_icon_title {
+        display: none; } }
 
 .title_block {
-  margin-top: 10px;
-  margin-left: 20px; }
+  margin-top: 10px; }
   .title_block .title {
     font-size: 3rem;
     margin: 0;
@@ -16,8 +29,47 @@
     @media screen and (max-width: 768px) {
       .title_block .title {
         font-size: 2rem; } }
+  .title_block .organization_name {
+    font-size: 1.5rem; }
+  .title_block .tag_frame {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    gap: 5px 5px;
+    box-sizing: border-box; }
+    .title_block .tag_frame .tag {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: 2rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+      background: #99999999; }
+      .title_block .tag_frame .tag p {
+        padding: 0;
+        margin: auto; }
 
-.content {
-  max-width: 60rem; }
+.pdf_area {
+  width: 100%;
+  height: 500px; }
+
+.detail_block {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: large; }
+  .detail_block h1 {
+    width: 100%; }
+
+.content-block {
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f288;
+  padding: 5rem 5rem;
+  border-radius: 0.4rem; }
+  @media screen and (max-width: 768px) {
+    .content-block {
+      padding: 0.5rem 0.5rem; } }
 
 /*# sourceMappingURL=EventDetail.css.map */

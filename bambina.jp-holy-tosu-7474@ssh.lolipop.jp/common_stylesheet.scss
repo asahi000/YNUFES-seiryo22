@@ -79,7 +79,7 @@ nav {
   }
 }
 
-.content {
+.content1-home {
   width: 100%;
   max-width: 700px;
   color: black;
@@ -90,7 +90,7 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .content {
+  .content1-home {
     flex-direction: column;
   }
   #mobile_toggle {
