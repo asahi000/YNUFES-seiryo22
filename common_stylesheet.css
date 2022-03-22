@@ -1,14 +1,15 @@
 .wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Kiwi Maru', serif; }
 
-nav {
+header {
   white-space: nowrap;
-  /*using sticky position*/
   z-index: 50;
   position: fixed;
   top: 0;
@@ -16,14 +17,14 @@ nav {
   height: 75px;
   align-items: center;
   color: white;
-  background: #131516;
+  background: linear-gradient(120deg, #ff5ecc, #ff75a8);
   display: flex;
   flex-direction: row;
   padding: 0;
   margin: 0;
   flex-wrap: nowrap; }
   @media screen and (max-width: 375px) {
-    nav {
+    header {
       height: 65px; } }
 
 #mobile_toggle {
@@ -47,9 +48,10 @@ nav {
     align-items: center; }
   #site_title .logo1 > div:first-of-type {
     padding: 0;
-    height: 36px;
+    height: 35px;
     line-height: 1;
-    font-size: 36px; }
+    font-size: 35px;
+    margin-bottom: 3px; }
     @media screen and (max-width: 375px) {
       #site_title .logo1 > div:first-of-type {
         font-size: 28px;
@@ -67,27 +69,31 @@ nav {
       #site_title .logo2 {
         font-size: 40px; } }
 
-.header_menu {
-  display: flex;
-  justify-content: flex-end;
+header nav {
   margin-left: auto;
-  right: 0;
-  float: right;
-  list-style: none;
-  padding: 0;
-  color: #aba499; }
-  .header_menu li {
-    line-height: 71px;
-    align-items: center;
-    height: 71px;
-    font-size: 20px;
-    padding: 1px 10px;
-    transition: background 0.5s ease-in-out; }
-    .header_menu li a {
-      text-decoration: none;
-      color: white; }
-  .header_menu li:hover {
-    background: #de31aa; }
+  right: 0; }
+  header nav .header_menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    right: 0;
+    float: right;
+    list-style: none;
+    padding: 0;
+    color: #aba499; }
+    header nav .header_menu li {
+      line-height: 71px;
+      align-items: center;
+      height: 75px;
+      font-size: 20px;
+      padding: 1px 10px;
+      transition: background 0.5s ease-in-out; }
+      header nav .header_menu li a {
+        height: 100%;
+        text-decoration: none;
+        color: white; }
+    header nav .header_menu li:hover {
+      background: #ff3b90; }
 
 .background_img {
   width: 100%;
@@ -135,11 +141,73 @@ nav {
   transform-origin: bottom left; }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: white;
+  background: #131516;
   width: 100%;
-  height: 300px;
-  background: white;
-  z-index: 50;
-  bottom: 0; }
+  z-index: 50; }
+  footer .footer_wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  footer .sitemap {
+    flex-basis: 30%;
+    font-size: 1.2rem;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    footer .sitemap > ul {
+      margin: auto; }
+  footer .footer_org {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  footer .logos_area {
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .logos_area > img {
+      width: 120px;
+      border-radius: 10px; }
+    footer .logos_area .sns {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 5px; }
+      footer .logos_area .sns img {
+        height: 40px; }
+    @media screen and (max-width: 400px) {
+      footer .logos_area > img {
+        width: 60px; }
+      footer .logos_area .sns img {
+        height: 20px; } }
+  footer .organ_area {
+    margin: 10px 0; }
+    footer .organ_area h3 {
+      padding: 0;
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.1; }
+    @media screen and (max-width: 400px) {
+      footer .organ_area {
+        font-size: 10px;
+        line-height: 1; }
+        footer .organ_area h3 {
+          font-size: 20px; } }
 
 @media screen and (max-width: 815px) {
   #mobile_toggle {
@@ -148,7 +216,7 @@ footer {
   #site_title {
     margin-left: 10px; }
 
-  .header_menu {
+  header nav {
     display: none; } }
 
 /*# sourceMappingURL=common_stylesheet.css.map */

@@ -3,11 +3,14 @@
   width: 100%;
 }
 
-.content-frame .pamphlet_block {
+.pamphlet_block {
   display: flex;
   flex-direction: row;
   width: 100%;
-  .home_pamphlet, .home_poster{
+  max-width: 70rem;
+
+  .home_pamphlet, .home_poster {
+    position: relative;
     flex-basis: 50%;
     padding: 10px;
     box-sizing: border-box;
@@ -16,8 +19,21 @@
       box-sizing: border-box;
       width: 100%;
     }
+
+    > div {
+      vertical-align: center;
+      margin: auto 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #de31aa;
+      position: absolute;
+      z-index: 50;
+    }
   }
-  .home_poster{
+
+  .home_poster {
     background: #de31aa;
     padding: 10px;
     text-align: center;
@@ -26,23 +42,64 @@
 }
 
 .update_block {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
   width: 100%;
-  height: 10rem;
   max-width: 70rem;
   color: black;
-  background: crimson;
-  margin: 30px;
-  border-radius: 30px;
   box-sizing: border-box;
+  padding: 10px;
 
-  > h1 {
-    font-size: 2rem;
-    width: 100%;
-    height: 3rem;
-    margin: 10px;
-    color: white;
-    text-align: center;
+  .twitter_embeds {
+    flex-basis: 40%;
+    height: 40rem;
+  }
+
+  .updates_area {
+    border-radius: 30px;
+    bottom: 0;
+    margin: 0 10px;
+    flex-basis: 60%;
     background: brown;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2rem;
+      width: 100%;
+      height: 3rem;
+      color: white;
+      text-align: center;
+    }
+
+    .updates_frame {
+      border-radius: 30px;
+      height: auto;
+      top: 0;
+      bottom: 0;
+      margin: 20px;
+    }
+
+    .news {
+      padding: 5px;
+      border-radius: 20px;
+      //border: black 2px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: white;
+    }
+  }
+  @media screen and (max-width: 710px) {
+    .twitter_embeds{
+      display: none;
+    }
+    .updates_area{
+      flex-basis: auto;
+      width: 100%;
+    }
   }
 }
 
@@ -55,6 +112,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
+
   .home_events {
     display: flex;
     flex-basis: 50%;
@@ -285,7 +343,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  .home_pamphlet, .home_poster{
+  .home_pamphlet, .home_poster {
     flex-basis: auto;
     left: 0;
     right: 0;
@@ -293,10 +351,16 @@
     margin: 10px 0;
   }
 
-  .content1-home,.pamphlet_block {
+  .content1-home, .pamphlet_block {
     flex-direction: column;
   }
   .home_events {
+    flex-basis: auto;
+  }
+  nav.sitemap {
+    display: none;
+  }
+  footer .footer_org {
     flex-basis: auto;
   }
 }
