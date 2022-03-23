@@ -44,7 +44,8 @@
     box-sizing: border-box;
     border-radius: 20px; }
     .events_search_block .section_title > img {
-      width: 30rem;
+      max-width: 30rem;
+      width: 100%;
       height: 6rem;
       z-index: 30; }
     .events_search_block .section_title > div {

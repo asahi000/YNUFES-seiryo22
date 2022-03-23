@@ -48,6 +48,7 @@
   background: #de31aabb;
   margin: 20px 0;
   border-radius: 40px;
+
   .section_title {
     display: flex;
     justify-content: center;
@@ -57,7 +58,8 @@
     border-radius: 20px;
 
     > img {
-      width: 30rem;
+      max-width: 30rem;
+      width: 100%;
       height: 6rem;
       z-index: 30;
     }
@@ -73,6 +75,7 @@
       position: absolute;
     }
   }
+
   .content1-home {
     width: 100%;
     max-width: 70rem;
@@ -289,9 +292,7 @@
           font-size: 1.5rem;
           font-feature-settings: "flat";
         }
-
       }
-
     }
 
     .events_by_category {
@@ -381,9 +382,6 @@
     }
   }
 }
-
-
-
 
 .border_in_events {
   border-left: 2px dashed #8c8b8b;

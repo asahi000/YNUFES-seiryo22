@@ -236,6 +236,9 @@ footer {
   #site_title .logo2 {
     margin-left: 8px; }
 
+  header {
+    padding-top: 0.3rem; }
+
   header nav {
     display: none; }
 
