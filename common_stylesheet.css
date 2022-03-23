@@ -9,11 +9,12 @@ body {
   font-family: 'Kiwi Maru', serif; }
 
 header {
+  padding-top: 1rem;
   z-index: 50;
   width: 100%;
   position: fixed;
   color: white;
-  background: linear-gradient(120deg, #ff5ecc, #ff75a8);
+  background: linear-gradient(120deg, #e31bb1, #e810b2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,6 +152,7 @@ footer {
   width: 100%;
   z-index: 50; }
   footer .footer_wrapper {
+    width: 100%;
     max-width: 70rem;
     margin: 0 auto;
     display: flex;
@@ -160,7 +162,7 @@ footer {
   footer .sitemap {
     flex-basis: 30%;
     font-size: 1.2rem;
-    margin: 30px;
+    margin: 1rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -172,42 +174,60 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-  footer .logos_area {
-    margin: 30px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    footer .logos_area > img {
-      width: 120px;
-      border-radius: 10px; }
-    footer .logos_area .sns {
-      margin-top: 15px;
+    footer .footer_org .logos_area {
+      margin: 1rem 0 0 2rem;
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
+      flex-direction: row-reverse;
       justify-content: center;
-      gap: 5px; }
-      footer .logos_area .sns img {
-        height: 40px; }
-    @media screen and (max-width: 400px) {
-      footer .logos_area > img {
-        width: 60px; }
-      footer .logos_area .sns img {
-        height: 20px; } }
-  footer .organ_area {
-    margin: 10px 0; }
-    footer .organ_area h3 {
-      padding: 0;
-      margin: 0;
-      font-size: 1.5rem;
-      line-height: 1.1; }
-    @media screen and (max-width: 400px) {
-      footer .organ_area {
-        font-size: 10px;
-        line-height: 1; }
-        footer .organ_area h3 {
-          font-size: 20px; } }
+      align-items: center; }
+      footer .footer_org .logos_area > img {
+        margin-left: 0.3rem;
+        width: 10rem;
+        border-radius: 10px; }
+      footer .footer_org .logos_area .sns {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem; }
+        footer .footer_org .logos_area .sns img {
+          height: 3rem; }
+          @media screen and (max-width: 470px) {
+            footer .footer_org .logos_area .sns img {
+              height: 2rem; } }
+      @media screen and (max-width: 470px) {
+        footer .footer_org .logos_area {
+          flex-direction: column;
+          margin-left: 0; }
+          footer .footer_org .logos_area .sns {
+            flex-direction: row; }
+          footer .footer_org .logos_area > img {
+            width: 9rem; } }
+      @media screen and (max-width: 470px) {
+        footer .footer_org .logos_area > img {
+          margin-bottom: 1rem;
+          width: 7rem; } }
+    footer .footer_org .organ_area {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      margin-left: 3rem; }
+      footer .footer_org .organ_area h3 {
+        padding: 0;
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.1; }
+      @media screen and (max-width: 70rem) {
+        footer .footer_org .organ_area {
+          margin-left: 1rem;
+          font-size: 0.7rem; } }
+      @media screen and (max-width: 400px) {
+        footer .footer_org .organ_area {
+          margin-left: 0.5rem;
+          font-size: 10px;
+          line-height: 1.2; }
+          footer .footer_org .organ_area h3 {
+            font-size: 18px; } }
 
 @media screen and (max-width: 670px) {
   #mobile_toggle {
@@ -220,6 +240,9 @@ footer {
     display: none; }
 
   .content-frame {
-    padding-top: 80px; } }
+    padding-top: 80px; }
+
+  .footer_org {
+    flex-basis: auto; } }
 
 /*# sourceMappingURL=common_stylesheet.css.map */
