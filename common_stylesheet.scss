@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Kiwi Maru', serif;
+  font-family: 'Noto Serif JP', serif;
 }
 
 header {
@@ -17,8 +17,8 @@ header {
   position: fixed;
   color: white;
   //background: #e31bb1;
-  background: linear-gradient(120deg, #e31bb1, #e810b2);
-  //background: linear-gradient(120deg, #ff5ecc, #ff75a8);
+  //background: linear-gradient(120deg, #e31bb1, #e810b2);
+  background: linear-gradient(120deg, #ff5ecc, #ff75a8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,6 +108,7 @@ header nav {
       line-height: 40px;
       align-items: center;
       height: 40px;
+      border-radius: 20px;
       font-size: 20px;
       padding: 5px 10px;
       transition: background 0.5s ease-in-out;
@@ -144,18 +145,26 @@ header nav {
 }
 
 
-.content-frame {
+.body-frame {
+  position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: clip;
+  min-height: calc(100vh - 360px);
   box-sizing: border-box;
-  padding-top: 130px;
-
+  padding-top: 140px;
+  padding-bottom: 220px;
   * {
     z-index: 10;
+  }
+  .content-frame{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 140px - 220px);
   }
 }
 
@@ -185,6 +194,8 @@ header nav {
 
 
 footer {
+  position: absolute;/*←絶対位置*/
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,10 +327,19 @@ footer {
   header nav {
     display: none;
   }
-  .content-frame {
+  .body-frame {
     padding-top: 80px;
+    min-height: calc(100vh - 80px - 220px);
   }
   .footer_org {
+    flex-basis: auto;
+  }
+
+  nav.sitemap {
+    display: none;
+  }
+
+  footer .footer_org {
     flex-basis: auto;
   }
 }

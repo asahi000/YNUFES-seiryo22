@@ -1,0 +1,64 @@
+.conditions_block {
+  max-width: 70rem;
+  width: 100%;
+  background: #de31aa;
+  height: 10rem; }
+
+.events_block {
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70rem;
+  width: 100%; }
+  .events_block .event_widget {
+    border-radius: 1rem;
+    width: 12rem;
+    background: #ffffff66;
+    position: relative;
+    text-overflow: ellipsis; }
+    .events_block .event_widget .type {
+      color: white;
+      position: absolute;
+      top: 10.8rem;
+      margin: 0.2rem;
+      background: #de31aa;
+      border-radius: 1rem;
+      padding: 0.2rem; }
+    .events_block .event_widget > img {
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+      width: 100%; }
+    .events_block .event_widget > .meta_area {
+      margin: 0.5rem 1rem; }
+      .events_block .event_widget > .meta_area h2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        max-height: 2.8rem;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        padding: 0;
+        margin: 0; }
+    .events_block .event_widget > hr {
+      margin: 0;
+      padding: 0; }
+    .events_block .event_widget .tag_area {
+      margin-top: 0.3rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.2rem; }
+      .events_block .event_widget .tag_area > div {
+        font-size: 0.8rem;
+        color: white;
+        padding: 0.3rem;
+        border-radius: 0.6rem;
+        background: #de31aa;
+        white-space: nowrap; }
+
+/*# sourceMappingURL=EventList.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -6,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Kiwi Maru', serif; }
+  font-family: 'Noto Serif JP', serif; }
 
 header {
   padding-top: 1rem;
@@ -14,7 +15,7 @@ header {
   width: 100%;
   position: fixed;
   color: white;
-  background: linear-gradient(120deg, #e31bb1, #e810b2);
+  background: linear-gradient(120deg, #ff5ecc, #ff75a8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,6 +86,7 @@ header nav {
       line-height: 40px;
       align-items: center;
       height: 40px;
+      border-radius: 20px;
       font-size: 20px;
       padding: 5px 10px;
       transition: background 0.5s ease-in-out; }
@@ -109,17 +111,25 @@ header nav {
 .hover-to-shrink:hover {
   transform: scale(0.9); }
 
-.content-frame {
+.body-frame {
+  position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: clip;
+  min-height: calc(100vh - 360px);
   box-sizing: border-box;
-  padding-top: 130px; }
-  .content-frame * {
+  padding-top: 140px;
+  padding-bottom: 220px; }
+  .body-frame * {
     z-index: 10; }
+  .body-frame .content-frame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 140px - 220px); }
 
 .hover-underline-animation {
   display: inline-block;
@@ -142,6 +152,9 @@ header nav {
   transform-origin: bottom left; }
 
 footer {
+  position: absolute;
+  /*←絶対位置*/
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -242,10 +255,17 @@ footer {
   header nav {
     display: none; }
 
-  .content-frame {
-    padding-top: 80px; }
+  .body-frame {
+    padding-top: 80px;
+    min-height: calc(100vh - 80px - 220px); }
 
   .footer_org {
+    flex-basis: auto; }
+
+  nav.sitemap {
+    display: none; }
+
+  footer .footer_org {
     flex-basis: auto; } }
 
 /*# sourceMappingURL=common_stylesheet.css.map */
